@@ -20,7 +20,6 @@ router.get(
 );
 router.get(
 	"/recommendations",
-	passport.checkAuthentication,
 	usersController.recommendations
 );
 router.get(
