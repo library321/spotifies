@@ -151,7 +151,7 @@
 			btn.addEventListener("click", (e) => {
 				e.preventDefault();
 				if (arr.length > 0) {
-					let url = `/users/recommendations/?`;
+					 let recommendations_list_http = `/users/recommendations/?`
 					let item = ``;
 
 					for (let i = 0; i < arr.length; i++) {
@@ -161,7 +161,7 @@
 							item += `${i}=${arr[i]}&`;
 						}
 					}
-					window.location.href = url + item;
+					window.location.href = recommendations_list_http + new URLSearchParams + item;
 				} else {
 					new Noty({
 						theme: "metroui",
