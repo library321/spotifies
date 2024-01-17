@@ -78,7 +78,7 @@ app.use(customMiddleware.createUploads);
 app.use("/", route);
 
 
-app.listen(process.env.PORT || 3000, function(req, res){
+app.listen(process.env.PORT || 3500, function(req, res){
 	console.log("server started on")
 });
 
