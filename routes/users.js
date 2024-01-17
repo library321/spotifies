@@ -19,7 +19,7 @@ router.get(
 	usersController.destroySession
 );
 router.get(
-	"/recommendations",
+	"/recommendations",passport.checkAuthentication,
 	usersController.recommendations
 );
 router.get(
